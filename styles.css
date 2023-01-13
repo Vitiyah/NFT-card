@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(217deg, 54%, 11%);
+  width: 100%;
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+.card {
+  width: 18rem;
+  height: 32rem;
+  background: hsl(216deg, 50%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+.card-inner {
+  width: 16rem;
+  height: 30rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-rows: 15rem 15rem;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.img-container img {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img-container::after {
+  content: url(./images/icon-view.svg);
+  background: hsla(178deg, 100%, 50%, 0.5);
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.img-container:hover::after {
+  opacity: 1;
+}
+
+.text-container h3 {
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+
+.text-container h3:hover {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.text-container p {
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: hsl(215deg, 51%, 70%);
+}
+
+.text-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 1.5rem;
+}
+
+.eth-flex {
+  height: 1.2rem;
+  font-weight: 900;
+  display: flex;
+  align-items: flex-end;
+  color: hsl(178deg, 100%, 50%);
+}
+
+.time-flex {
+  height: 1.2rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.eth-flex img,
+.time-flex img {
+  margin-right: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: hsl(215deg, 32%, 27%);
+  margin-top: 1.5rem;
+}
+
+.img-flex {
+  height: 2rem;
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.img-flex img {
+  width: 2.5rem;
+  margin-right: 15px;
+  border: 1px solid hsl(0deg, 0%, 100%);
+  border-radius: 50%;
+}
+
+.img-flex p {
+  margin-bottom: 1rem;
+}
+
+.img-flex span {
+  color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+}
+
+.img-flex span:hover {
+  color: hsl(178deg, 100%, 50%);
+}/*# sourceMappingURL=styles.css.map */
